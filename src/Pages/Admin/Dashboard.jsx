@@ -1,4 +1,8 @@
 import React from 'react'
+import USFlag from '../../assets/img/icons/flags/US.png'
+import DEFlag from '../../assets/img/icons/flags/DE.png'
+import GBFlag from '../../assets/img/icons/flags/GB.png'
+import BRFlag from '../../assets/img/icons/flags/BR.png'
 
 export default function Dashboard() {
   return (
@@ -109,7 +113,7 @@ export default function Dashboard() {
                                                 <div className="d-flex px-2 py-1 align-items-center">
                                                     <div>
                                                     <img
-                                                        src="./assets/img/icons/flags/US.png"
+                                                        src={USFlag}
                                                         alt="Country flag"
                                                     />
                                                     </div>
@@ -159,7 +163,7 @@ export default function Dashboard() {
                                                 <div className="d-flex px-2 py-1 align-items-center">
                                                     <div>
                                                     <img
-                                                        src="./assets/img/icons/flags/DE.png"
+                                                        src={DEFlag}
                                                         alt="Country flag"
                                                     />
                                                     </div>
@@ -209,7 +213,7 @@ export default function Dashboard() {
                                                 <div className="d-flex px-2 py-1 align-items-center">
                                                     <div>
                                                     <img
-                                                        src="./assets/img/icons/flags/GB.png"
+                                                        src={GBFlag}
                                                         alt="Country flag"
                                                     />
                                                     </div>
@@ -259,7 +263,7 @@ export default function Dashboard() {
                                                 <div className="d-flex px-2 py-1 align-items-center">
                                                     <div>
                                                     <img
-                                                        src="./assets/img/icons/flags/BR.png"
+                                                        src={BRFlag}
                                                         alt="Country flag"
                                                     />
                                                     </div>

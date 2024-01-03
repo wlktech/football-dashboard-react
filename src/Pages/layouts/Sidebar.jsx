@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import logo from '../../assets/img/logo/logo.png'
+import profile from '../../assets/img/team-3.jpg'
 
 export default function Sidebar() {
   return (
@@ -18,12 +20,12 @@ export default function Sidebar() {
                 className="navbar-brand m-0"
             >
                 <img
-                src="./src/assets/img/logo/logo.png"
+                src={logo}
                 className="navbar-brand-img h-100"
                 alt="main_logo"
                 />
                 <span className="ms-1 font-weight-bold text-white">
-                Football - Dashboard
+                77 Sports - Dashboard
                 </span>
             </NavLink>
             </div>
@@ -38,7 +40,7 @@ export default function Sidebar() {
                         className="nav-link text-white"
                         to={'/profile'}
                         >
-                        <img src="./src/assets/img/team-3.jpg" className="avatar" />
+                        <img src={profile} className="avatar" />
                         <span className="nav-link-text ms-2 ps-1">Brooklyn Alice</span>
                     </NavLink>
                 </li>
