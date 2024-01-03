@@ -55,13 +55,13 @@ export default function TopBar() {
                 <h6 className="font-weight-bolder mb-0">index</h6>
             </nav>
             <div className="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
-                <a href="javascript:;" className="nav-link text-body p-0">
-                <div className="sidenav-toggler-inner">
-                    <i className="sidenav-toggler-line" />
-                    <i className="sidenav-toggler-line" />
-                    <i className="sidenav-toggler-line" />
-                </div>
-                </a>
+                <button className="nav-link text-body p-0">
+                    <div className="sidenav-toggler-inner">
+                        <i className="sidenav-toggler-line" />
+                        <i className="sidenav-toggler-line" />
+                        <i className="sidenav-toggler-line" />
+                    </div>
+                </button>
             </div>
             <div
                 className="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4"

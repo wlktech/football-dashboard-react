@@ -5,7 +5,7 @@ export default function Sidebar() {
   return (
     <>
         <aside
-            className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark"
+            className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 bg-gradient-dark"
             id="sidenav-main"
         >
             <div className="sidenav-header">
@@ -18,7 +18,7 @@ export default function Sidebar() {
                 className="navbar-brand m-0"
             >
                 <img
-                src="https://png.pngtree.com/png-clipart/20220306/original/pngtree-fire-football-png-transparent-png-image_7416469.png"
+                src="./src/assets/img/logo/logo.png"
                 className="navbar-brand-img h-100"
                 alt="main_logo"
                 />
@@ -33,49 +33,14 @@ export default function Sidebar() {
             id="sidenav-collapse-main"
             >
             <ul className="navbar-nav">
-                <li className="nav-item mb-2 mt-0">
-                <a
-                    data-bs-toggle="collapse"
-                    href="#ProfileNav"
-                    className="nav-link text-white"
-                    aria-controls="ProfileNav"
-                    role="button"
-                    aria-expanded="false"
-                >
-                    <img src="./src/assets/img/team-3.jpg" className="avatar" />
-                    <span className="nav-link-text ms-2 ps-1">Brooklyn Alice</span>
-                </a>
-                <div className="collapse" id="ProfileNav" style={{}}>
-                    <ul className="nav ">
-                    <li className="nav-item">
-                        <NavLink
+                <li className="nav-item">
+                    <NavLink
                         className="nav-link text-white"
                         to={'/profile'}
                         >
-                        <span className="sidenav-mini-icon"> MP </span>
-                        <span className="sidenav-normal  ms-3  ps-1"> My Profile </span>
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <a
-                        className="nav-link text-white "
-                        href="./pages/pages/account/settings.html"
-                        >
-                        <span className="sidenav-mini-icon"> S </span>
-                        <span className="sidenav-normal  ms-3  ps-1"> Settings </span>
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a
-                        className="nav-link text-white "
-                        href="./pages/authentication/signin/basic.html"
-                        >
-                        <span className="sidenav-mini-icon"> L </span>
-                        <span className="sidenav-normal  ms-3  ps-1"> Logout </span>
-                        </a>
-                    </li>
-                    </ul>
-                </div>
+                        <img src="./src/assets/img/team-3.jpg" className="avatar" />
+                        <span className="nav-link-text ms-2 ps-1">Brooklyn Alice</span>
+                    </NavLink>
                 </li>
                 <hr className="horizontal light mt-0" />
                 <li className="nav-item">
