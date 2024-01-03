@@ -37,6 +37,15 @@ export default function Sidebar() {
             <ul className="navbar-nav">
                 <li className="nav-item">
                     <NavLink
+                    className="nav-link text-white "
+                    to={'/'}
+                    >
+                        <i className="material-icons-round opacity-10">dashboard</i>
+                        <span className="sidenav-normal  ms-2  ps-1"> Dashboards </span>
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink
                         className="nav-link text-white"
                         to={'/profile'}
                         >
@@ -45,71 +54,10 @@ export default function Sidebar() {
                     </NavLink>
                 </li>
                 <hr className="horizontal light mt-0" />
-                <li className="nav-item">
-                <a
-                    data-bs-toggle="collapse"
-                    href="#dashboardsExamples"
-                    className="nav-link text-white "
-                    aria-controls="dashboardsExamples"
-                    role="button"
-                    aria-expanded="false"
-                >
-                    <i className="material-icons-round opacity-10">dashboard</i>
-                    <span className="nav-link-text ms-2 ps-1">Dashboards</span>
-                </a>
-                <div className="collapse " id="dashboardsExamples">
-                    <ul className="nav ">
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./dashboards/analytics.html"
-                        >
-                        <span className="sidenav-mini-icon"> A </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Analytics </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./dashboards/discover.html"
-                        >
-                        <span className="sidenav-mini-icon"> D </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Discover </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./dashboards/sales.html"
-                        >
-                        <span className="sidenav-mini-icon"> S </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Sales </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./dashboards/automotive.html"
-                        >
-                        <span className="sidenav-mini-icon"> A </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Automotive </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./dashboards/smart-home.html"
-                        >
-                        <span className="sidenav-mini-icon"> S </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Smart Home </span>
-                        </a>
-                    </li>
-                    </ul>
-                </div>
-                </li>
-                <li className="nav-item mt-3">
+                
+                <li className="nav-item mt-1">
                 <h6 className="ps-4  ms-2 text-uppercase text-xs font-weight-bolder text-white">
-                    PAGES
+                    User Management
                 </h6>
                 </li>
                 <li className="nav-item">
@@ -121,325 +69,37 @@ export default function Sidebar() {
                     role="button"
                     aria-expanded="false"
                 >
-                    <i className="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">
-                    image
+                    <i className="material-icons-round">
+                        <i className="fas fa-users"></i>
                     </i>
-                    <span className="nav-link-text ms-2 ps-1">Pages</span>
+                    <span className="nav-link-text ms-2 ps-1">Users</span>
                 </a>
                 <div className="collapse " id="pagesExamples">
                     <ul className="nav ">
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        data-bs-toggle="collapse"
-                        aria-expanded="false"
-                        href="#profileExample"
-                        >
-                        <span className="sidenav-mini-icon"> P </span>
-                        <span className="sidenav-normal  ms-2  ps-1">
-                            {" "}
-                            Profile <b className="caret" />
-                        </span>
-                        </a>
-                        <div className="collapse " id="profileExample">
-                        <ul className="nav nav-sm flex-column">
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/profile/overview.html"
-                            >
-                                <span className="sidenav-mini-icon"> P </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                Profile Overview{" "}
-                                </span>
+                        <li className="nav-item ">
+                            <a className="nav-link text-white " href="./pages/widgets.html">
+                            <span className="sidenav-mini-icon"> <i className="fas fa-user-secret"></i> </span>
+                            <span className="sidenav-normal  ms-2  ps-1"> Admins </span>
                             </a>
-                            </li>
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/profile/projects.html"
-                            >
-                                <span className="sidenav-mini-icon"> A </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                All Projects{" "}
-                                </span>
+                        </li>
+                        <li className="nav-item ">
+                            <a className="nav-link text-white " href="./pages/widgets.html">
+                            <span className="sidenav-mini-icon"> <i className="fas fa-user-secret"></i> </span>
+                            <span className="sidenav-normal  ms-2  ps-1"> Masters </span>
                             </a>
-                            </li>
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/profile/messages.html"
-                            >
-                                <span className="sidenav-mini-icon"> M </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                Messages{" "}
-                                </span>
+                        </li>
+                        <li className="nav-item ">
+                            <a className="nav-link text-white " href="./pages/widgets.html">
+                            <span className="sidenav-mini-icon"> <i className="fas fa-users"></i> </span>
+                            <span className="sidenav-normal  ms-2  ps-1"> Agents </span>
                             </a>
-                            </li>
-                        </ul>
-                        </div>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        data-bs-toggle="collapse"
-                        aria-expanded="false"
-                        href="#usersExample"
-                        >
-                        <span className="sidenav-mini-icon"> U </span>
-                        <span className="sidenav-normal  ms-2  ps-1">
-                            {" "}
-                            Users <b className="caret" />
-                        </span>
-                        </a>
-                        <div className="collapse " id="usersExample">
-                        <ul className="nav nav-sm flex-column">
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/users/reports.html"
-                            >
-                                <span className="sidenav-mini-icon"> R </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                Reports{" "}
-                                </span>
+                        </li>
+                        <li className="nav-item ">
+                            <a className="nav-link text-white " href="./pages/widgets.html">
+                            <span className="sidenav-mini-icon"> <i className="fas fa-users"></i> </span>
+                            <span className="sidenav-normal  ms-2  ps-1"> Users </span>
                             </a>
-                            </li>
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/users/new-user.html"
-                            >
-                                <span className="sidenav-mini-icon"> N </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                New User{" "}
-                                </span>
-                            </a>
-                            </li>
-                        </ul>
-                        </div>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        data-bs-toggle="collapse"
-                        aria-expanded="false"
-                        href="#accountExample"
-                        >
-                        <span className="sidenav-mini-icon"> A </span>
-                        <span className="sidenav-normal  ms-2  ps-1">
-                            {" "}
-                            Account <b className="caret" />
-                        </span>
-                        </a>
-                        <div className="collapse " id="accountExample">
-                        <ul className="nav nav-sm flex-column">
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/account/settings.html"
-                            >
-                                <span className="sidenav-mini-icon"> S </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                Settings{" "}
-                                </span>
-                            </a>
-                            </li>
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/account/billing.html"
-                            >
-                                <span className="sidenav-mini-icon"> B </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                Billing{" "}
-                                </span>
-                            </a>
-                            </li>
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/account/invoice.html"
-                            >
-                                <span className="sidenav-mini-icon"> I </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                Invoice{" "}
-                                </span>
-                            </a>
-                            </li>
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/account/security.html"
-                            >
-                                <span className="sidenav-mini-icon"> S </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                Security{" "}
-                                </span>
-                            </a>
-                            </li>
-                        </ul>
-                        </div>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        data-bs-toggle="collapse"
-                        aria-expanded="false"
-                        href="#projectsExample"
-                        >
-                        <span className="sidenav-mini-icon"> P </span>
-                        <span className="sidenav-normal  ms-2  ps-1">
-                            {" "}
-                            Projects <b className="caret" />
-                        </span>
-                        </a>
-                        <div className="collapse " id="projectsExample">
-                        <ul className="nav nav-sm flex-column">
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/projects/general.html"
-                            >
-                                <span className="sidenav-mini-icon"> G </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                General{" "}
-                                </span>
-                            </a>
-                            </li>
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/projects/timeline.html"
-                            >
-                                <span className="sidenav-mini-icon"> T </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                Timeline{" "}
-                                </span>
-                            </a>
-                            </li>
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/projects/new-project.html"
-                            >
-                                <span className="sidenav-mini-icon"> N </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                New Project{" "}
-                                </span>
-                            </a>
-                            </li>
-                        </ul>
-                        </div>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        data-bs-toggle="collapse"
-                        aria-expanded="false"
-                        href="#vrExamples"
-                        >
-                        <span className="sidenav-mini-icon"> V </span>
-                        <span className="sidenav-normal  ms-2  ps-1">
-                            {" "}
-                            Virtual Reality <b className="caret" />
-                        </span>
-                        </a>
-                        <div className="collapse " id="vrExamples">
-                        <ul className="nav nav-sm flex-column">
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/vr/vr-default.html"
-                            >
-                                <span className="sidenav-mini-icon"> V </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                VR Default{" "}
-                                </span>
-                            </a>
-                            </li>
-                            <li className="nav-item">
-                            <a
-                                className="nav-link text-white "
-                                href="./pages/vr/vr-info.html"
-                            >
-                                <span className="sidenav-mini-icon"> V </span>
-                                <span className="sidenav-normal  ms-2  ps-1">
-                                {" "}
-                                VR Info{" "}
-                                </span>
-                            </a>
-                            </li>
-                        </ul>
-                        </div>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./pages/pricing-page.html"
-                        >
-                        <span className="sidenav-mini-icon"> P </span>
-                        <span className="sidenav-normal  ms-2  ps-1">
-                            {" "}
-                            Pricing Page{" "}
-                        </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a className="nav-link text-white " href="./pages/rtl-page.html">
-                        <span className="sidenav-mini-icon"> R </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> RTL </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a className="nav-link text-white " href="./pages/widgets.html">
-                        <span className="sidenav-mini-icon"> W </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Widgets </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a className="nav-link text-white " href="./pages/charts.html">
-                        <span className="sidenav-mini-icon"> C </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Charts </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./pages/sweet-alerts.html"
-                        >
-                        <span className="sidenav-mini-icon"> S </span>
-                        <span className="sidenav-normal  ms-2  ps-1">
-                            {" "}
-                            Sweet Alerts{" "}
-                        </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./pages/notifications.html"
-                        >
-                        <span className="sidenav-mini-icon"> N </span>
-                        <span className="sidenav-normal  ms-2  ps-1">
-                            {" "}
-                            Notifications{" "}
-                        </span>
-                        </a>
-                    </li>
+                        </li>
                     </ul>
                 </div>
                 </li>
@@ -452,7 +112,7 @@ export default function Sidebar() {
                     role="button"
                     aria-expanded="false"
                 >
-                    <i className="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">
+                    <i className="material-icons-round">
                     apps
                     </i>
                     <span className="nav-link-text ms-2 ps-1">Applications</span>
