@@ -6,7 +6,9 @@ import Profile from "../Pages/Admin/Profile";
 import Admins from "../Pages/Admin/Users/Admins";
 import Masters from "../Pages/Admin/Users/Masters";
 import Agents from "../Pages/Admin/Users/Agents";
-// import Players from "../Pages/Admin/Users/Players";
+import Users from "../Pages/Admin/Users/Users";
+import Login from "../Pages/Auth/Login";
+import Register from "../Pages/Auth/Register";
 
 
 const router = createBrowserRouter([
@@ -19,21 +21,21 @@ const router = createBrowserRouter([
             element : <Dashboard />
         },
         {
-          path : "/admins",
+          path : "/admin/admins",
           element : <Admins />
         },
         {
-          path : "/masters",
+          path : "/admin/masters",
           element : <Masters />
         },        
         {
-          path : "/agents",
+          path : "/admin/agents",
           element : <Agents />
         },
-        // {
-        //   path : "/users",
-        //   element : <Players />
-        // },
+        {
+          path : "/admin/users",
+          element : <Users />
+        },
         {
           path : "/profile",
           element : <Profile />
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
             element : <NotFound />
         }
       ]
+    },
+    {
+      path : "/login",
+      element : <Login />
+    },
+    {
+      path : "/register",
+      element : <Register />
     },
 ]);
 

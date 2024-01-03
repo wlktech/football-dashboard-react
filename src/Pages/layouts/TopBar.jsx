@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function TopBar() {
   return (
@@ -54,34 +55,33 @@ export default function TopBar() {
                 </ol>
                 <h6 className="font-weight-bolder mb-0">index</h6>
             </nav>
-            <div className="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
-                <button className="nav-link text-body p-0">
-                    <div className="sidenav-toggler-inner">
-                        <i className="sidenav-toggler-line" />
-                        <i className="sidenav-toggler-line" />
-                        <i className="sidenav-toggler-line" />
-                    </div>
-                </button>
+            <div className="sidenav-toggler sidenav-toggler-inner d-xl-block d-none " id="iconNavbarSidenav">
+                <a href="javascript:;" className="nav-link text-body p-0">
+                <div className="sidenav-toggler-inner">
+                    <i className="sidenav-toggler-line" />
+                    <i className="sidenav-toggler-line" />
+                    <i className="sidenav-toggler-line" />
+                </div>
+                </a>
             </div>
             <div
                 className="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4"
                 id="navbar"
             >
                 <div className="ms-md-auto pe-md-3 d-flex align-items-center">
-                <div className="input-group input-group-outline">
+                {/* <div className="input-group input-group-outline">
                     <label className="form-label">Search here</label>
                     <input type="text" className="form-control" />
-                </div>
+                </div> */}
                 </div>
                 <ul className="navbar-nav  justify-content-end">
-                <li className="nav-item">
-                    <a
-                    href="./pages/authentication/signin/illustration.html"
+                <li className="nav-item pe-3">
+                    <Link
+                    to={'/login'}
                     className="nav-link text-body p-0 position-relative"
-                    target="_blank"
                     >
                     <i className="material-icons me-sm-1">account_circle</i>
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item d-xl-none ps-3 d-flex align-items-center">
                     <a
@@ -96,13 +96,13 @@ export default function TopBar() {
                     </div>
                     </a>
                 </li>
-                <li className="nav-item px-3">
+                {/* <li className="nav-item px-3">
                     <a href="javascript:;" className="nav-link text-body p-0">
                     <i className="material-icons fixed-plugin-button-nav cursor-pointer">
                         settings
                     </i>
                     </a>
-                </li>
+                </li> */}
                 <li className="nav-item dropdown pe-2">
                     <a
                     href="javascript:;"

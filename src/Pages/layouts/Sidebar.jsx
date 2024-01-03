@@ -7,7 +7,7 @@ export default function Sidebar() {
   return (
     <>
         <aside
-            className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 bg-gradient-dark"
+            className=" sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 bg-gradient-dark"
             id="sidenav-main"
         >
             <div className="sidenav-header">
@@ -74,31 +74,31 @@ export default function Sidebar() {
                     </i>
                     <span className="nav-link-text ms-2 ps-1">Users</span>
                 </a>
-                <div className="collapse " id="pagesExamples">
+                <div className="collapse" id="pagesExamples">
                     <ul className="nav ">
                         <li className="nav-item ">
-                            <a className="nav-link text-white " href="./pages/widgets.html">
+                            <NavLink className="nav-link text-white " to={'/admin/admins'}>
                             <span className="sidenav-mini-icon"> <i className="fas fa-user-secret"></i> </span>
                             <span className="sidenav-normal  ms-2  ps-1"> Admins </span>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link text-white " href="./pages/widgets.html">
+                            <NavLink className="nav-link text-white " to={'/admin/masters'}>
                             <span className="sidenav-mini-icon"> <i className="fas fa-user-secret"></i> </span>
                             <span className="sidenav-normal  ms-2  ps-1"> Masters </span>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link text-white " href="./pages/widgets.html">
+                            <NavLink className="nav-link text-white " to={'/admin/agents'}>
                             <span className="sidenav-mini-icon"> <i className="fas fa-users"></i> </span>
                             <span className="sidenav-normal  ms-2  ps-1"> Agents </span>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link text-white " href="./pages/widgets.html">
+                            <NavLink className="nav-link text-white " to={'/admin/users'}>
                             <span className="sidenav-mini-icon"> <i className="fas fa-users"></i> </span>
-                            <span className="sidenav-normal  ms-2  ps-1"> Users </span>
-                            </a>
+                            <span className="sidenav-normal  ms-2  ps-1"> Players </span>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

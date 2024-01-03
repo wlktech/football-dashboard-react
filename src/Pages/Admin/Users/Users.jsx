@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../../assets/img/logo/logo.png';
 
-export default function Agents() {
+export default function Users() {
   return (
     <>
       <div className="container-fluid py-4">
@@ -10,7 +10,7 @@ export default function Agents() {
             <div className="card p-3">
               {/* Card header */}
               <div className="card-header">
-                <h5 className="mb-0">Agents List</h5>
+                <h5 className="mb-0">User List</h5>
                 {/* <p className="text-sm mb-0">
                   A lightweight, extendable, dependency-free javascript HTML table
                   plugin.
@@ -49,9 +49,9 @@ export default function Agents() {
                       <td>
                         <img src={logo} width={50} height={50} alt="" />
                       </td>
-                      <td>Agent</td>
+                      <td>User</td>
                       <td>09123456789</td>
-                      <td>Agent</td>
+                      <td>User</td>
                       <td>12-Dec-2024</td>
                       <td>
                         <a href="" className="btn btn-success py-2 px-2"><i className="fas fa-pen"></i></a>
