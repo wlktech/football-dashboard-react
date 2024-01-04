@@ -97,7 +97,7 @@ export default function Sidebar() {
                         <li className="nav-item ">
                             <NavLink className="nav-link text-white " to={'/admin/users'}>
                             <span className="sidenav-mini-icon"> <i className="fas fa-users"></i> </span>
-                            <span className="sidenav-normal  ms-2  ps-1"> Players </span>
+                            <span className="sidenav-normal  ms-2  ps-1"> Users </span>
                             </NavLink>
                         </li>
                     </ul>
@@ -112,10 +112,8 @@ export default function Sidebar() {
                     role="button"
                     aria-expanded="false"
                 >
-                    <i className="material-icons-round">
-                    apps
-                    </i>
-                    <span className="nav-link-text ms-2 ps-1">Applications</span>
+                    <i className="fas fa-users-gear"></i>
+                    <span className="nav-link-text ms-2 ps-1">Authorization</span>
                 </a>
                 <div className="collapse " id="applicationsExamples">
                     <ul className="nav ">
@@ -125,7 +123,7 @@ export default function Sidebar() {
                         href="./applications/crm.html"
                         >
                         <span className="sidenav-mini-icon"> C </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> CRM </span>
+                        <span className="sidenav-normal  ms-2  ps-1"> Roles </span>
                         </a>
                     </li>
                     <li className="nav-item ">
@@ -133,59 +131,14 @@ export default function Sidebar() {
                         className="nav-link text-white "
                         href="./applications/kanban.html"
                         >
-                        <span className="sidenav-mini-icon"> K </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Kanban </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./applications/wizard.html"
-                        >
-                        <span className="sidenav-mini-icon"> W </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Wizard </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./applications/datatables.html"
-                        >
-                        <span className="sidenav-mini-icon"> D </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> DataTables </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./applications/calendar.html"
-                        >
-                        <span className="sidenav-mini-icon"> C </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Calendar </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./applications/stats.html"
-                        >
-                        <span className="sidenav-mini-icon"> S </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Stats </span>
-                        </a>
-                    </li>
-                    <li className="nav-item ">
-                        <a
-                        className="nav-link text-white "
-                        href="./applications/validation.html"
-                        >
-                        <span className="sidenav-mini-icon"> V </span>
-                        <span className="sidenav-normal  ms-2  ps-1"> Validation </span>
+                        <span className="sidenav-mini-icon"> P </span>
+                        <span className="sidenav-normal  ms-2  ps-1"> Permissions </span>
                         </a>
                     </li>
                     </ul>
                 </div>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                 <a
                     data-bs-toggle="collapse"
                     href="#ecommerceExamples"
@@ -651,14 +604,14 @@ export default function Sidebar() {
                     </li>
                     </ul>
                 </div>
-                </li>
+                </li> */}
                 <li className="nav-item">
                 <hr className="horizontal light" />
                 <h6 className="ps-4  ms-2 text-uppercase text-xs font-weight-bolder text-white">
-                    DOCS
+                    Authentication
                 </h6>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                 <a
                     data-bs-toggle="collapse"
                     href="#basicExamples"
@@ -1002,17 +955,18 @@ export default function Sidebar() {
                     </li>
                     </ul>
                 </div>
-                </li>
+                </li> */}
                 <li className="nav-item">
                 <a
                     className="nav-link"
                     href="https://github.com/creativetimofficial/ct-material-dashboard-pro/blob/master/CHANGELOG.md"
                     target="_blank"
                 >
-                    <i className="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">
+                    {/* <i className="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">
                     receipt_long
-                    </i>
-                    <span className="nav-link-text ms-2 ps-1">Changelog</span>
+                    </i> */}
+                    <i className="fas fa-right-from-bracket"></i>
+                    <span className="nav-link-text ms-2 ps-1">Logout</span>
                 </a>
                 </li>
             </ul>

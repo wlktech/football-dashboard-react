@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../../assets/img/logo/logo.png';
+import Create from './Masters/Create';
 
 export default function Masters() {
+  let [create, setCreate] = useState(false);
   return (
     <>
       <div className="container-fluid py-4">
         <div className="row">
+        {!create && (
           <div className="col-12">
             <div className="card p-3">
               {/* Card header */}
               <div className="card-header">
+                <div className="d-flex justify-content-between">
                 <h5 className="mb-0">Master List</h5>
+                <button className="btn btn-sm btn-primary" onClick={(e)=>setCreate(true)}><i className="fas fa-plus me-2"></i>Create</button>
+                </div>
                 {/* <p className="text-sm mb-0">
                   A lightweight, extendable, dependency-free javascript HTML table
                   plugin.
@@ -64,6 +70,10 @@ export default function Masters() {
               </div>
             </div>
           </div>
+          )}
+          {create && (
+            <Create setCreate={setCreate} />
+          )}
         </div>
       </div>
     </>
