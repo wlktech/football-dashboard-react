@@ -7,8 +7,8 @@ const UserLayout = () => {
   return (
     <div className="container-fluid" id="allBgColor">
       <Navbar />
-      <div class="row">
-        <div class="col-lg-6 col-md-6 offset-lg-3 offset-md-3 col-12" id="main">
+      <div className="row">
+        <div className="col-lg-6 col-md-6 offset-lg-3 offset-md-3 col-12" id="main">
           <Outlet />
         </div>
       </div>

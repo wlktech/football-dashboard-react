@@ -1,6 +1,7 @@
 import React from "react";
 import "./UserLayout.css";
 import Footer from "../layouts/Footer";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div id="navbar">
@@ -10,9 +11,9 @@ const Navbar = () => {
           id="top-nav"
         >
           <div class="d-flex justify-content-between px-3">
-            <a href="./../index.html" class="text-decoration-none">
+            <Link to={'/'} class="text-decoration-none">
               <h5 class="text-white mt-2">Delight 2D | 3D</h5>
-            </a>
+            </Link>
             <div>
               <i class="fas text-white fa-bell me-1"></i>
             </div>

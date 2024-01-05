@@ -1,5 +1,6 @@
 import React from "react";
 import "../userLayouts/UserLayout.css";
+import { NavLink } from "react-router-dom";
 const Home = () => {
   return (
     <div className="container-fluid py-4">
@@ -15,7 +16,7 @@ const Home = () => {
         <h5 className="mt-1  fw-bold">246.76 Ks</h5>
       </div>
       <div className="d-flex justify-content-around mt-2 align-items-center text-center">
-        <a href="/maung" className="card w-100 text-decoration-none me-1">
+        <NavLink to={'/maung'} className="card w-100 text-decoration-none me-1">
           <img
             src="img/football/pitch.png"
             className="mx-auto mt-2"
@@ -24,7 +25,7 @@ const Home = () => {
             alt=""
           />
           <p className="text-dark">မောင်း</p>
-        </a>
+        </NavLink>
         <a href="body-goal.html" className="card w-100 text-decoration-none">
           <img
             src="img/football/football.png"

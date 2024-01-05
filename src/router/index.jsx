@@ -16,36 +16,6 @@ import BodyGoal from "../Pages/User/BodyGoal";
 import Match from "../Pages/User/Match";
 const router = createBrowserRouter([
   {
-    path: "/admin",
-    element: <Layout />,
-    children: [
-      {
-        path: "",
-        element: <Dashboard />,
-      },
-      {
-        path: "admins",
-        element: <Admins />,
-      },
-      {
-        path: "masters",
-        element: <Masters />,
-      },
-      {
-        path: "agents",
-        element: <Agents />,
-      },
-      {
-        path: "users",
-        element: <Users />,
-      },
-      {
-        path: "profile",
-        element: <Profile />,
-      },
-    ],
-  },
-  {
     path: "/",
     element: <UserLayout />,
     children: [
@@ -64,6 +34,36 @@ const router = createBrowserRouter([
       {
         path: "match",
         element: <Match />,
+      },
+    ],
+  },
+  {
+    path: "/admin",
+    element: <Layout />,
+    children: [
+      {
+        path: "/admin",
+        element: <Dashboard />,
+      },
+      {
+        path: "/admin/admins",
+        element: <Admins />,
+      },
+      {
+        path: "/admin/masters",
+        element: <Masters />,
+      },
+      {
+        path: "/admin/agents",
+        element: <Agents />,
+      },
+      {
+        path: "/admin/users",
+        element: <Users />,
+      },
+      {
+        path: "/admin/profile",
+        element: <Profile />,
       },
     ],
   },
