@@ -43,18 +43,13 @@ const GoalResult = () => {
             aria-labelledby="pills-home-tab"
             tabIndex={0}
           >
-            <div>
+            <div className="mb-4">
               <p
-                className="py-2 px-3 fw-bold"
-                style={{
-                  background:
-                    "linear-gradient(6deg, rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
-                  border: "1px solid gold",
-                }}
+                className="py-2 px-3 bg-dark fw-bold mb-0"
               >
                 Australia A-league
               </p>
-              <div>
+              <div className="bg-secondary">
                 <div className="d-flex justify-content-start align-items-center">
                   <p style={{ fontSize: 12 }}>12-12-2023 &nbsp; 12:00 AM</p>
                   <p className="fw-bold" style={{ marginLeft: "20%" }}>
@@ -68,18 +63,13 @@ const GoalResult = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="mb-4">
               <p
-                className="py-2 px-3 fw-bold"
-                style={{
-                  background:
-                    "linear-gradient(6deg, rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
-                  border: "1px solid gold",
-                }}
+                className="py-2 px-3 bg-dark fw-bold mb-0"
               >
                 Australia A-league
               </p>
-              <div>
+              <div className="bg-secondary">
                 <div className="d-flex justify-content-start align-items-center">
                   <p style={{ fontSize: 12 }}>12-12-2023 &nbsp; 12:00 AM</p>
                   <p className="fw-bold" style={{ marginLeft: "20%" }}>
@@ -93,18 +83,13 @@ const GoalResult = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="mb-4">
               <p
-                className="py-2 px-3 fw-bold"
-                style={{
-                  background:
-                    "linear-gradient(6deg, rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
-                  border: "1px solid gold",
-                }}
+                className="py-2 px-3 bg-dark fw-bold mb-0"
               >
                 Australia A-league
               </p>
-              <div>
+              <div className="bg-secondary">
                 <div className="d-flex justify-content-start align-items-center">
                   <p style={{ fontSize: 12 }}>12-12-2023 &nbsp; 12:00 AM</p>
                   <p className="fw-bold" style={{ marginLeft: "20%" }}>
@@ -118,18 +103,13 @@ const GoalResult = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="mb-4">
               <p
-                className="py-2 px-3 fw-bold"
-                style={{
-                  background:
-                    "linear-gradient(6deg, rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
-                  border: "1px solid gold",
-                }}
+                className="py-2 px-3 bg-dark fw-bold mb-0"
               >
                 Australia A-league
               </p>
-              <div>
+              <div className="bg-secondary">
                 <div className="d-flex justify-content-start align-items-center">
                   <p style={{ fontSize: 12 }}>12-12-2023 &nbsp; 12:00 AM</p>
                   <p className="fw-bold" style={{ marginLeft: "20%" }}>
@@ -143,18 +123,13 @@ const GoalResult = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="mb-4">
               <p
-                className="py-2 px-3 fw-bold"
-                style={{
-                  background:
-                    "linear-gradient(6deg, rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
-                  border: "1px solid gold",
-                }}
+                className="py-2 px-3 bg-dark fw-bold mb-0"
               >
                 Australia A-league
               </p>
-              <div>
+              <div className="bg-secondary">
                 <div className="d-flex justify-content-start align-items-center">
                   <p style={{ fontSize: 12 }}>12-12-2023 &nbsp; 12:00 AM</p>
                   <p className="fw-bold" style={{ marginLeft: "20%" }}>
@@ -168,18 +143,13 @@ const GoalResult = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="mb-4">
               <p
-                className="py-2 px-3 fw-bold"
-                style={{
-                  background:
-                    "linear-gradient(6deg, rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
-                  border: "1px solid gold",
-                }}
+                className="py-2 px-3 bg-dark fw-bold mb-0"
               >
                 Australia A-league
               </p>
-              <div>
+              <div className="bg-secondary">
                 <div className="d-flex justify-content-start align-items-center">
                   <p style={{ fontSize: 12 }}>12-12-2023 &nbsp; 12:00 AM</p>
                   <p className="fw-bold" style={{ marginLeft: "20%" }}>
@@ -201,18 +171,13 @@ const GoalResult = () => {
             aria-labelledby="pills-profile-tab"
             tabIndex={0}
           >
-            <div>
+            <div className="mb-4">
               <p
-                className="py-2 px-3 fw-bold"
-                style={{
-                  background:
-                    "linear-gradient(6deg, rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
-                  border: "1px solid gold",
-                }}
+                className="py-2 px-3 bg-dark fw-bold mb-0"
               >
                 Australia A-league Today
               </p>
-              <div>
+              <div className="bg-secondary">
                 <div className="d-flex justify-content-start align-items-center">
                   <p style={{ fontSize: 12 }}>12-12-2023 &nbsp; 12:00 AM</p>
                 </div>
@@ -223,18 +188,13 @@ const GoalResult = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="mb-4">
               <p
-                className="py-2 px-3 fw-bold"
-                style={{
-                  background:
-                    "linear-gradient(6deg, rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
-                  border: "1px solid gold",
-                }}
+                className="py-2 px-3 bg-dark fw-bold mb-0"
               >
                 AFC Cup
               </p>
-              <div>
+              <div className="bg-secondary">
                 <div className="d-flex justify-content-start align-items-center">
                   <p style={{ fontSize: 12 }}>12-12-2023 &nbsp; 12:00 AM</p>
                 </div>
@@ -245,18 +205,13 @@ const GoalResult = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="mb-4">
               <p
-                className="py-2 px-3 fw-bold"
-                style={{
-                  background:
-                    "linear-gradient(6deg, rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
-                  border: "1px solid gold",
-                }}
+                className="py-2 px-3 bg-dark fw-bold mb-0"
               >
                 Australia A-league
               </p>
-              <div>
+              <div className="bg-secondary">
                 <div className="d-flex justify-content-around align-items-center">
                   <p style={{ fontSize: 12 }}>12-12-2023 &nbsp; 12:00 AM</p>
                   <p className="fw-bold ">FT</p>

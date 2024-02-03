@@ -88,45 +88,26 @@ const CashTransfer = () => {
             <div>
               <p>ငွေထုတ်ရမည့်အကောင့်</p>
               <div
-                className="p-5 rounded bg-dark"
+                className="p-4 rounded bg-dark"
               >
-                <div className="d-flex justify-content-between">
-                  <p>နာမည် </p>
-                  <input
-                    type="text"
-                    className="w-50 border rounded border-none outline-none bg-transparent"
-                  />
-                </div>
-                <div
-                  className="d-flex justify-content-between mt-1"
-                  style={{ position: "relative" }}
-                >
-                  <p>အကောင့် ( သို့ ) ဖုန်း </p>
-                  <input
-                    type="text"
-                    className="w-50 rounded border border-none outline-none bg-transparent"
-                  />
-                </div>
+                <form action="" method="post">
+                  <div className="mb-3">
+                    <label htmlFor="name" className="form-label text-white">အမည်</label>
+                    <input type="text" name="name" className="form-control bg-transparent text-white" placeholder="" />
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="phone" className="form-label text-white">အကောင့် (သို့) ဖုန်း</label>
+                    <input type="number" name="phone" className="form-control bg-transparent text-white" placeholder="" />
+                  </div>
+                  <div className="mb-5">
+                    <label htmlFor="amount" className="form-label text-white">ငွေပမာဏ</label>
+                    <input type="number" name="amount" className="form-control bg-transparent text-white" placeholder="" />
+                  </div>
+                  <div className="mb-3">
+                    <button className="btn btn-light w-100">ပို့မည်</button>
+                  </div>
+                </form>
               </div>
-            </div>
-            <div className="d-flex justify-content-around mt-4 px-3">
-              <p className="w-50">ငွေပမာဏ</p>
-              <input
-                type="text"
-                className="w-50 rounded border border-none outline outline-none bg-transparent"
-              />
-            </div>
-
-            <div className="mt-5">
-              <button
-                className="btn btn-success w-100"
-                style={{
-                  background:
-                    "linear-gradient(rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
-                }}
-              >
-                ပို့မည်
-              </button>
             </div>
           </div>
         </div>
