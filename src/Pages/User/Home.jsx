@@ -1,17 +1,11 @@
 import React from "react";
 import "../userLayouts/UserLayout.css";
-import { NavLink } from "react-router-dom";
-import logo from "../../assets/img/logo/logo.png";
+import { Link, NavLink } from "react-router-dom";
+
 const Home = () => {
   return (
-    <div className="container-fluid pt-5" style={{ paddingBottom: "200px" }}>
-      <div className="text-center">
-        <img
-          src={logo}
-          alt="logo"
-          style={{ width: "100px", height: "100px" }}
-        />
-      </div>
+    <div className="container-fluid py-4">
+
       <marquee behavior="" className="mt-3 text-white" direction="left">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
         numquam.
@@ -72,7 +66,7 @@ const Home = () => {
           />
           <p className="text-dark">လောင်းထားသောပွဲစဉ်</p>
         </NavLink>
-        <a href="/match" className="card w-100 text-decoration-none">
+        <NavLink to="/match" className="card w-100 text-decoration-none">
           <img
             src="img/football/schedule.png"
             className="mx-auto mt-2"
@@ -81,7 +75,7 @@ const Home = () => {
             alt=""
           />
           <p className="text-dark">ပွဲစဉ်ဟောင်းများ</p>
-        </a>
+        </NavLink>
       </div>
       <div className="d-flex justify-content-around mt-2 align-items-center text-center">
         <NavLink

@@ -3,8 +3,8 @@ import "./GoalResult.css";
 const GoalResult = () => {
   return (
     <>
-      <div className="container-fluid pt-5" style={{ paddingBottom: "100px" }}>
-        <h5 className="text-center mt-5">ဂိုးရလဒ်များ</h5>
+      <div className="container-fluid" style={{ paddingBottom: "100px" }}>
+        <h5 className="text-center">ဂိုးရလဒ်များ</h5>
         <ul className="nav nav-pills mb-3 tab" id="pills-tab" role="tablist">
           <li className="nav-item" role="presentation">
             <button

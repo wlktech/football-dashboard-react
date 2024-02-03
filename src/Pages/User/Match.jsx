@@ -7,16 +7,17 @@ const Match = () => {
         <p
           className="fs-6 fw-bold p-2"
           style={{
-            color: "gray",
+            color: "#fff",
             background:
-              "linear-gradient(6deg,rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
+            "#5732fcc3",
             border: "1px solid goldenrod",
+            borderRadius: "5px",
           }}
         >
           World - FIFA World Cup (Quata Final)
         </p>
-        <div className="mt-3">
-          <p>20 Nov 2023(Monday)</p>
+        <div className="mt-3 bg-dark pt-3">
+          <p className="text-center">20 Nov 2023(Monday)</p>
           <div
             className="p-3 d-flex justify-content-around align-items-center"
             style={{ borderBottom: "1px solid gold" }}
@@ -42,8 +43,8 @@ const Match = () => {
             </h6>
           </div>
         </div>
-        <div className="mt-3">
-          <p>29 Nov 2023(Tuesday)</p>
+        <div className="mt-3 bg-dark pt-3">
+          <p className="text-center">29 Nov 2023(Tuesday)</p>
           <div
             className="p-3 d-flex justify-content-around align-items-center"
             style={{ borderBottom: "1px solid gold" }}
@@ -71,20 +72,21 @@ const Match = () => {
         </div>
       </div>
 
-      <div className="my-3">
+      <div className="mt-5">
         <p
           className="fs-6 fw-bold p-2"
           style={{
-            color: "gray",
+            color: "#fff",
             background:
-              "linear-gradient(6deg,rgba(102, 0, 149, 1) 0%, rgba(52, 0, 87, 1) 56%)",
+            "#5732fcc3",
             border: "1px solid goldenrod",
+            borderRadius: "5px",
           }}
         >
           Spain Lega (Quata Final)
         </p>
-        <div className="mt-3">
-          <p>12 Dec 2024 (Saturday)</p>
+        <div className="mt-3 bg-dark pt-3">
+          <p className="text-center">12 Dec 2024 (Saturday)</p>
           <div
             className="p-3 d-flex justify-content-around align-items-center"
             style={{ borderBottom: "1px solid gold" }}
@@ -110,8 +112,8 @@ const Match = () => {
             </h6>
           </div>
         </div>
-        <div className="mt-3">
-          <p>10 Dec 2024(Thursday)</p>
+        <div className="mt-3 bg-dark pt-3">
+          <p className="text-center">10 Dec 2024(Thursday)</p>
           <div
             className="p-3 d-flex justify-content-around align-items-center"
             style={{ borderBottom: "1px solid gold" }}

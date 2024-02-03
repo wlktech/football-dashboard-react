@@ -4,8 +4,8 @@ import Footer from "../userLayouts/Footer";
 const CashTransferHistory = () => {
   return (
     <>
-      <div className="container-fluid pt-5" style={{ paddingBottom: "100px" }}>
-        <h5 className="text-center mt-5">ငွေစာရင်း</h5>
+      <div className="container-fluid" style={{ paddingBottom: "100px" }}>
+        <h5 className="text-center">ငွေစာရင်း</h5>
         <div className="d-flex justify-content-between mt-3 fw-bold">
           <p>08-01-2024 အဖွင့်လက်ကျန်</p>
           <p>35,000</p>

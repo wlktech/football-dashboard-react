@@ -4,14 +4,14 @@ import Footer from "../userLayouts/Footer";
 const BodyGoal = () => {
   return (
     <>
-      <div className="container-fluid pt-5" style={{ paddingBottom: "100px" }}>
-        <h5 className="text-center mt-5">ဘော်ဒီ/ဂိုးပေါင်း</h5>
+      <div className="container-fluid" style={{ paddingBottom: "100px" }}>
+        <h5 className="text-center">ဘော်ဒီ/ဂိုးပေါင်း</h5>
         <div className="pt-1 mt-4 ">
           <p>
             <i className="fa fa-star pe-2"></i> AFC Cup
           </p>
         </div>
-        <div className="card shadow text-center bg-transparent px-2 pt-2 pb-3">
+        <div className="card shadow text-center bg-dark px-2 pt-2 pb-3">
           <p className="text-white">ပွဲချိန် : 11-12-2023 4:30 PM</p>
           <div className="d-flex">
             <div className="box-1 d-flex justify-content-around">
@@ -39,7 +39,7 @@ const BodyGoal = () => {
             <i className="fa fa-star pe-2"></i> Turkiye Lig3
           </p>
         </div>
-        <div className="card shadow text-center bg-transparent px-2 pt-2 pb-3">
+        <div className="card shadow text-center bg-dark px-2 pt-2 pb-3">
           <p className="text-white">ပွဲချိန် : 11-12-2023 4:30 PM</p>
           <div className="d-flex">
             <div className="box-1 d-flex justify-content-around">
@@ -67,7 +67,7 @@ const BodyGoal = () => {
             <i className="fa fa-star pe-2"></i> Bulgaria B PFG
           </p>
         </div>
-        <div className="card shadow text-center bg-transparent px-2 pt-2 pb-3">
+        <div className="card shadow text-center bg-dark px-2 pt-2 pb-3">
           <p className="text-white">ပွဲချိန် : 11-12-2023 4:30 PM</p>
           <div className="d-flex">
             <div className="box-1">
@@ -95,7 +95,7 @@ const BodyGoal = () => {
             <i className="fa fa-star pe-2"></i> Turkiye Lig3
           </p>
         </div>
-        <div className="card shadow text-center bg-transparent px-2 pt-2 pb-4">
+        <div className="card shadow text-center bg-dark px-2 pt-2 pb-4">
           <p className="text-white">ပွဲချိန် : 11-12-2023 4:30 PM</p>
           <div className="d-flex">
             <div className="box-1 d-flex justify-content-around align-items-center">

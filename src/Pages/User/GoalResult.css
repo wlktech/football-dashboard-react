@@ -21,3 +21,7 @@
 .active {
   text-shadow: none;
 }
+
+.nav-link{
+  color: #ffffff !important;
+}

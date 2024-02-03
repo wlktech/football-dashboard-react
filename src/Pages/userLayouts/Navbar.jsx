@@ -1,15 +1,15 @@
 import React from "react";
 import "./UserLayout.css";
 import Footer from "../layouts/Footer";
-import { Link, useNavigate } from "react-router-dom";
-import logo from "../../assets/img/logo/logo.png";
+import logo from "../../assets/img/logo/logo.png"
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div id="navbar">
       <div class="row">
         <div
-          class="col-lg-6 col-md-6 offset-lg-3 offset-md-3 col-12 py-3 nav-border-purple fixed-top"
+          class="col-lg-6 col-md-6 offset-lg-3 offset-md-3 col-12 py-2 fixed-top"
           id="top-nav"
         >
           <div class="d-flex justify-content-between px-3">
@@ -20,12 +20,13 @@ const Navbar = () => {
               ></i>
             </button>
             <Link to={"/"} class="text-decoration-none">
-              <img
-                src={logo}
-                alt="logo"
-                style={{ width: "50px", height: "50px" }}
-              />
+              <span class="">
+                <img src={logo} width={50} alt="" />
+              </span>
             </Link>
+            <div>
+              {/* <i class="fas text-white fa-bell me-1"></i> */}
+            </div>
           </div>
         </div>
       </div>

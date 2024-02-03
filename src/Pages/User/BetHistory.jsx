@@ -4,8 +4,8 @@ import Footer from "../userLayouts/Footer";
 const BetHistory = () => {
   return (
     <>
-      <div className="container-fluid pt-5" style={{ paddingBottom: "100px" }}>
-        <h5 className="text-center mt-5">လောင်းထားသောပွဲစဉ်များ</h5>
+      <div className="container-fluid" style={{ paddingBottom: "100px" }}>
+        <h5 className="text-center">လောင်းထားသောပွဲစဉ်များ</h5>
         <div className="row mt-3 pb-3" style={{ fontSize: "small" }}>
           <div className="card mt-3 shadow">
             <div className="card-body">
