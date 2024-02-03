@@ -4,19 +4,39 @@ import { NavLink } from "react-router-dom";
 const Home = () => {
   return (
     <div className="container-fluid py-4">
-      <h5 className="text-center text-white mt-4">
-        နည်းနည်းလောင်း များများနိုင်
-      </h5>
+      <div className="text-center">
+        <img
+          src="./src/assets/img/logo/logo.png"
+          alt="logo"
+          style={{ width: "100px", height: "100px" }}
+        />
+      </div>
       <marquee behavior="" className="mt-3 text-white" direction="left">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
         numquam.
       </marquee>
       <div className="card px-3 pb-3 fs-5 fw-bold ">
-        Balance
-        <h5 className="mt-1  fw-bold">246.76 Ks</h5>
+        <div className="d-flex justify-content-between align-items-center">
+          <div className="d-flex align-items-center">
+            <i
+              className="fa-regular fa-user-circle text-dark"
+              style={{ fontSize: "55px" }}
+            ></i>
+            <div className="ms-4">
+              <h5 className="mt-1 fw-bold text-dark">Angel Angel</h5>
+              <h5 className="mt-1 fw-bold text-dark">500,000Ks</h5>
+            </div>
+          </div>
+          <div className="">
+            <i
+              class="fa-solid fa-rotate text-dark"
+              style={{ fontSize: "30px" }}
+            ></i>
+          </div>
+        </div>
       </div>
       <div className="d-flex justify-content-around mt-2 align-items-center text-center">
-        <NavLink to={'/maung'} className="card w-100 text-decoration-none me-1">
+        <NavLink to={"/maung"} className="card w-100 text-decoration-none me-1">
           <img
             src="img/football/pitch.png"
             className="mx-auto mt-2"
@@ -26,7 +46,7 @@ const Home = () => {
           />
           <p className="text-dark">မောင်း</p>
         </NavLink>
-        <a href="body-goal.html" className="card w-100 text-decoration-none">
+        <NavLink to={"/bodyGoal"} className="card w-100 text-decoration-none">
           <img
             src="img/football/football.png"
             className="mx-auto mt-2"
@@ -35,10 +55,13 @@ const Home = () => {
             alt=""
           />
           <p className="text-dark">ဘော်ဒီ/ဂိုးပေါင်း</p>
-        </a>
+        </NavLink>
       </div>
       <div className="d-flex justify-content-around mt-2 align-items-center text-center">
-        <a href="#" className="card w-100 text-decoration-none me-1">
+        <NavLink
+          to={"/BetHistory"}
+          className="card w-100 text-decoration-none me-1"
+        >
           <img
             src="img/football/history.png"
             className="mx-auto mt-2"
@@ -47,7 +70,7 @@ const Home = () => {
             alt=""
           />
           <p className="text-dark">လောင်းထားသောပွဲစဉ်</p>
-        </a>
+        </NavLink>
         <a href="/match" className="card w-100 text-decoration-none">
           <img
             src="img/football/schedule.png"
@@ -60,7 +83,10 @@ const Home = () => {
         </a>
       </div>
       <div className="d-flex justify-content-around mt-2 align-items-center text-center">
-        <a href="#" className="card w-100 text-decoration-none me-1">
+        <NavLink
+          to={"/cashTransferHistory"}
+          className="card w-100 text-decoration-none me-1"
+        >
           <img
             src="img/football/coins.png"
             className="mx-auto mt-2"
@@ -69,11 +95,8 @@ const Home = () => {
             alt=""
           />
           <p className="text-dark">ငွေစာရင်း</p>
-        </a>
-        <a
-          href="./goal-result.html"
-          className="card w-100 text-decoration-none"
-        >
+        </NavLink>
+        <NavLink to={"/goalResult"} className="card w-100 text-decoration-none">
           <img
             src="img/football/medical-result.png"
             className="mx-auto mt-2"
@@ -82,7 +105,7 @@ const Home = () => {
             alt=""
           />
           <p className="text-dark">ပွဲပြီးရလဒ်များ</p>
-        </a>
+        </NavLink>
       </div>
       <div className="d-flex justify-content-around mt-2 align-items-center text-center">
         <a href="#" className="card w-100 text-decoration-none me-1">
@@ -95,8 +118,8 @@ const Home = () => {
           />
           <p className="text-dark">3D/4D</p>
         </a>
-        <a
-          href="./money-change.html"
+        <NavLink
+          to={"/cashTransfer"}
           className="card w-100 text-decoration-none"
         >
           <img
@@ -107,7 +130,7 @@ const Home = () => {
             alt=""
           />
           <p className="text-dark">ငွေ/အကြောင်းကြား</p>
-        </a>
+        </NavLink>
       </div>
     </div>
   );

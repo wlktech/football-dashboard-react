@@ -14,6 +14,10 @@ import Home from "../Pages/User/Home";
 import Maung from "../Pages/User/Maung";
 import BodyGoal from "../Pages/User/BodyGoal";
 import Match from "../Pages/User/Match";
+import BetHistory from "../Pages/User/BetHistory";
+import CashTransferHistory from "../Pages/User/CashTransferHistory";
+import GoalResult from "../Pages/User/GoalResult";
+import CashTransfer from "../Pages/User/CashTransfer";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +34,22 @@ const router = createBrowserRouter([
       {
         path: "bodyGoal",
         element: <BodyGoal />,
+      },
+      {
+        path: "betHistory",
+        element: <BetHistory />,
+      },
+      {
+        path: "cashTransfer",
+        element: <CashTransfer />,
+      },
+      {
+        path: "cashTransferHistory",
+        element: <CashTransferHistory />,
+      },
+      {
+        path: "goalResult",
+        element: <GoalResult />,
       },
       {
         path: "match",
