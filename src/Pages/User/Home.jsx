@@ -1,12 +1,13 @@
 import React from "react";
 import "../userLayouts/UserLayout.css";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/img/logo/logo.png";
 const Home = () => {
   return (
     <div className="container-fluid py-4">
       <div className="text-center">
         <img
-          src="./src/assets/img/logo/logo.png"
+          src={logo}
           alt="logo"
           style={{ width: "100px", height: "100px" }}
         />
