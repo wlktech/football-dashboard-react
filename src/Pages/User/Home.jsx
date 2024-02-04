@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/img/logo/logo.png";
 const Home = () => {
   return (
-    <div className="container-fluid py-4">
+    <div className="container-fluid pt-5" style={{ paddingBottom: "200px" }}>
       <div className="text-center">
         <img
           src={logo}
