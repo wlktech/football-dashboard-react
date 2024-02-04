@@ -4,8 +4,8 @@ import Footer from "../userLayouts/Footer";
 const BodyGoal = () => {
   return (
     <>
-      <div className="container-fluid pt-3" style={{ paddingBottom: "100px" }}>
-        <h5 className="text-center mt-4">ဘော်ဒီ/ဂိုးပေါင်း</h5>
+      <div className="container-fluid pt-5" style={{ paddingBottom: "100px" }}>
+        <h5 className="text-center mt-5">ဘော်ဒီ/ဂိုးပေါင်း</h5>
         <div className="pt-1 mt-4 ">
           <p>
             <i className="fa fa-star pe-2"></i> AFC Cup

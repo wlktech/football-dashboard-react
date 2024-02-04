@@ -5,7 +5,7 @@ const Maung = () => {
   return (
     <>
       <div
-        className="container-fluid pt-3"
+        className="container-fluid pt-5 mt-5"
         style={{ minHeight: "100vh", paddingBottom: "120px" }}
       >
         <h5 className="text-center">မောင်း</h5>
